@@ -58,8 +58,8 @@ public class testingRFQ {
     @Test(priority = 1)
     public void loginToAdminPortal() {
         driver.get(adminPortal);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("login_username"))).sendKeys("admin");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys("Admin@123");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("login_username"))).sendKeys("");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password"))).sendKeys("");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[normalize-space()='Log In']"))).click();
     }
 
